@@ -67,22 +67,11 @@
             check_result += str_condensed[i]
         }
         if (check_result !== str_condensed) {
-            return "Not a palendrome."
+            return false
         }
         else {
-            return "Yep, that's a palendrome!"
+            return true
         }
-    }
-
-    function stringHelper (str_inp) {
-        let condensed = ""
-        for (el of str_inp.toLowerCase()) {
-            if (el === " " || el === "!" || el === "." || el === "," || el === "/" || el === ";" || el === ":" || el === "'" || el === '"') {
-                continue
-            }
-            condensed += el
-        }
-        return condensed
     }
 
 // ************** GET THREE LARGEST **************
@@ -143,7 +132,7 @@
             return 0
             
         } 
-    // return string to no punctuation or spaces, all lower case
+    // take a string and return with no punctuation or spaces, all lower case
         function stringHelper (str_inp) {
             let condensed = ""
             for (el of str_inp.toLowerCase()) {
