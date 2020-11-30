@@ -1,4 +1,29 @@
-// ************ BINARY SEARCH ********
+const chalk = require('chalk')
+
+// ************ FLOYD TRIANGLE ************
+    module.exports.floydTriangle = (rows) => {
+        // keep track of rendered rows; start at 0
+        let rows_set = 0
+        // keep track of current iteration, starting at 1
+        let current_row = 1
+        // keep track of numbers in that row
+        let current_nums = []
+        let num = 0
+        while (rows_set < rows) {
+            while (current_nums.length < current_row) {
+                num++
+                if (current_nums[current_nums.length - 1] !== num) {
+                    current_nums.push(displayHelper(num))
+                }
+            } 
+            rows_set++
+            current_row++
+            console.log(chalk.green(current_nums.join(", ")));
+            current_nums.length = 0
+        }
+    }
+
+// ************ BINARY SEARCH *************
     module.exports.binarySearch = (array, target) => {
         let sorted = array.sort(compare)
         let min = 0
@@ -142,4 +167,12 @@
                 condensed += el
             }
             return condensed
+        }
+    // take a number and make it a two digit string
+        function displayHelper (num) {
+            if (num < 10) {
+                return '0' + num.toString()
+            } else {
+                return num.toString()
+            }
         }

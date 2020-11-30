@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const { rev_str_ex, rev_arr_ex, is_pal_ex, big_array, prime_range } = require('./_inputs')
-const { reverseString, reverseArray, isStrPalendrome, doFib, getThreeLargest, doPrimes, binarySearch } = require('./functions')
+const { reverseString, reverseArray, isStrPalendrome, doFib, getThreeLargest, doPrimes, binarySearch, floydTriangle } = require('./functions')
 
 // Outputs
 let str_rev = reverseString(rev_str_ex)
@@ -67,4 +67,11 @@ console.log(chalk.green(`Value to search is: 3,345; the array has a length of ${
 console.log(chalk.green.underline(`Output:`))
 console.log(chalk.green(doBinarySearch))
 console.log("\n");
-
+// Floyd's Triangle 
+console.log(chalk.green.bold(`Floyd's Triangle`))
+console.log(chalk.green(`Print to the console a Floyd's Triangle of the number of rows given`))
+console.log(chalk.green.underline(`Input:`))
+console.log(chalk.green(`5`))
+console.log(chalk.green.underline(`Output:`))
+floydTriangle(5)
+console.log("\n");

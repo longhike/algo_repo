@@ -9,15 +9,30 @@
 A set of algorthims I'm continually updating; uses Node to render examples to the console.
 
 Currently included:
-    - reverse a string
-    - reverse an array
-    - palendrome checker
-    - fibonacci number outputter
-    - get three largest integers in array of integers
-    - get prime numbers given range
-    - perform a binary search on array of integers to see if a given input is included in the array
+- reverse a string
 
-![results](./assets/screen_shot.png)
+![reverse string](./assets/reverse_string.png)
+- reverse an array
+
+![reverse array](./assets/reverse_array.png)
+- palendrome checker
+
+![palendrome check](./assets/palendrome_check.png)
+- fibonnacci number outputter
+
+![fibonnacci number](./assets/fibonnacci_number.png)
+- get three largest integers in array of integers
+
+![three largest](./assets/three_largest.png)
+- get prime numbers given range
+
+![return primes](./assets/return_primes.png)
+- perform a binary search on array of integers to see if a given input is included in the array
+
+![binary search](./assets/binary_search.png)
+- show five rows of a Floyd's Triangle
+
+![floyds_triangle](./assets/floyds_triangle.png)
 
 ## Set-up & Installation requirements:
 
@@ -45,6 +60,6 @@ n/a
 ​
 ### License
 ​
-Copyright(c) 2020 By longhike
-​
+Copyright(c) 2020 By longhike.
+
 This software is licensed under MIT license.
