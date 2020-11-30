@@ -1,3 +1,26 @@
+// ************ BINARY SEARCH ********
+    module.exports.binarySearch = (array, target) => {
+        let sorted = array.sort(compare)
+        let min = 0
+        let max = sorted.length - 1
+        if (sorted) {
+            while (min <= max) {
+                let avg_ind = Math.floor((min + max)/2)
+                if (array[avg_ind] === target) {
+                    return true
+                }
+                else if (array[avg_ind] < target) {
+                    min = avg_ind + 1
+                }
+                else if (array[avg_ind] > target) {
+                    max = avg_ind -1
+                }
+            }
+            return false
+        }
+        
+    } 
+
 // ************* FIBONACCI *************
     module.exports.doFib = (n) => {
         let count = 1
@@ -107,3 +130,27 @@
         }
         return result;
     }
+
+    // ************* HELPERS ******************
+    // sort array of integers from least to greatest
+        function compare (a, b) {
+            if (a > b) {
+                return 1
+            }
+            else if (a < b) {
+                return -1
+            }
+            return 0
+            
+        } 
+    // return string to no punctuation or spaces, all lower case
+        function stringHelper (str_inp) {
+            let condensed = ""
+            for (el of str_inp.toLowerCase()) {
+                if (el === " " || el === "!" || el === "." || el === "," || el === "/" || el === ";" || el === ":" || el === "'" || el === '"') {
+                    continue
+                }
+                condensed += el
+            }
+            return condensed
+        }

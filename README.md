@@ -15,12 +15,15 @@ Currently included:
     - fibonacci number outputter
     - get three largest integers in array of integers
     - get prime numbers given range
+    - perform a binary search on array of integers to see if a given input is included in the array
+
+![results](./assets/screen_shot.png)
 
 ## Set-up & Installation requirements:
 
 Node.js 
 
-run `node script.js` or `npm start` in your terminal
+run `node script.js` or `npm start` in your terminal to view test-case results
 
 ## Known Bugs:
 
